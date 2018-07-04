@@ -1,0 +1,151 @@
+body {
+    background: url("http://justeunedose.fr/wp-content/uploads/2013/09/Grand-central-terminal.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.adminAlert {
+    background: yellow;
+    opacity: .85;
+    height: 1px;
+    width: 100%;
+    position: fixed;
+    left: 13.9%;
+    top: 0%;
+    padding: 28px;
+    display: none;
+   
+}
+
+#adminText {
+    position: fixed;
+    top: 3%;
+    left: 45%;
+    color: red;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+#logo {
+    opacity: .85;
+    width: 200px;
+   height: 150px;
+}
+.trainBox {
+    /* background: black; */
+    /* background: url("http://images.metroscenes.com/images/2013/new-york-city-may-2013/new_york_city_may2013_metroscenes.com_51.jpg");
+    background-size: cover; */
+    opacity: .85;
+    height: 300px;
+    width: 800px; 
+    padding: 30px;
+    margin: auto;
+    position: fixed;
+    left: 25%;
+    top: 150px;
+    overflow: scroll;
+}
+
+#trainScheduleHead {
+    width: 855px;
+    position: static;
+    left: -3.5%;
+    top: -50%;
+}
+
+#trainSchedule {
+    color: white;
+    width: 870px;
+    height: 410px;
+    position: relative;
+    left: -3.7%;
+    top: -8%;
+}
+
+#tableHeads {
+    font-family: 'Old Standard TT', serif;
+    width: 850px;
+    z-index: 0;
+    color: yellow;
+    font-size: 18px;
+    background-color: blue;
+    opacity: 0;
+}
+
+#tableCheater {
+    z-index: 1;
+    position: fixed;
+    left: 25%;
+    top: 150px;
+}
+
+
+#newRow {
+    font-family: 'Old Standard TT', serif;
+}
+th {
+    padding: 6.8px;
+
+}
+td{ 
+    text-align: center;
+    padding-top: 20px;
+   
+}
+
+
+#newRow:nth-child(odd) {
+    background-color: #bd0098;
+    height: 40px;
+}
+
+#newRow:nth-child(even) {
+    background-color: #ff6200;
+    height: 40px;
+}
+
+.addTrainBox {
+    background-color: blue;
+    opacity: .85;
+    float: left;
+    height: 550px;
+    width: 140px; 
+    padding: 30px;
+    margin: auto;
+    position: fixed;
+    left: 0%;
+    top: 20%;
+   
+}
+
+#clock {
+    padding-bottom: 10%;
+}
+
+.clock {
+    color: white;
+    font-size: 14px;
+}
+
+#addTrainName,
+#addTrainDest,
+#addTrainTime,
+#addTrainFreq {
+    margin-bottom: 10%;
+   
+}
+
+#trainSubmit{
+    background-color:  #F9B44C;
+    width: 100px;
+    height: 35px;
+    border: none;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 13px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

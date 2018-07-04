@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NJTransit | The Way To Go</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="icon" href="https://lh5.ggpht.com/NvIh85iIWH-YEZdG9j5DLTCs7TEGeQjZx391gQa3matnRLNSXBjli2dwqDRBHG3btzlU=w300">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</head>
+<body>
+    <div class="titleBox">
+        <img id="logo" src="https://www.shu.edu/visiting/images/10-NJTransit-logo.gif"></img>
+    </div>
+
+    <di></div>
+    <div class="adminAlert">
+       <p id="adminText">Administrator Mode Active</p>
+    </div>
+
+    <div class="trainBox">
+
+               
+          
+            <table id="trainSchedule">
+                <img id="tableCheater" src="assets/images/tablecheater.png"></img>
+                    <thead id="tableHeads">
+                          <tr>   
+                            <th>Train Name</th>
+                            <th>Destination</th>
+                            <th>Frequency (min)</th>
+                            <th>Next Arrival</th>
+                            <th>Minutes Away</th>
+                          </tr>
+                    </thead>
+                    <tbody id="tableItems">
+                    
+                </tbody>
+                  </table>
+    </div>
+
+    <div class="addTrainBox">
+
+        <div id="clock"><span class="clock">loading ...</span></div>
+        
+        <form id="addTrainName">
+            <label for="trainName">Train Name</label>
+            <input type="text" id="nameInput"><br>
+            </form>
+
+        <form id="addTrainDest">
+            <label for="trainDest">Destination</label>
+            <input type="text" id="destInput"><br>
+        </form>
+
+        <form id="addTrainTime">
+            <label for="trainTime">First Train Time (24hr clock)</label>
+            <input type="time" id="timeInput"><br>
+        </form>
+
+        <form id="addTrainFreq">
+            <label for="trainFreq">Frequency (min)</label>
+            <input type="number" id="freqInput"><br>
+        </form>
+        <br>
+       
+        <button id="trainSubmit" type="submit" value="submit">Submit <i class="fas fa-train"></i></button>
+
+    </div>
+</body>
+</html>
